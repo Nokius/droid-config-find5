@@ -7,7 +7,7 @@
 %define vendor_pretty OPPO
 %define device_pretty Find5
 
-%define dcd_patch ./
+%define dcd_path ./
 
 # Adjust this for your device
 %define pixel_ratio 2.0
