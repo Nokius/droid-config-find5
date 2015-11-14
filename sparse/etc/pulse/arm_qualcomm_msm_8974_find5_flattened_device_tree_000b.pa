@@ -105,5 +105,3 @@ load-module module-switch-on-port-available
 ### Make some devices default
 set-default-sink sink.primary
 set-default-source source.primary
-
-
