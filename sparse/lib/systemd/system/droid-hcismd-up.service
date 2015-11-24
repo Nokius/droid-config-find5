@@ -1,4 +1,4 @@
-I[Unit]
+[Unit]
 Description=Enable Bluetooth HCI over SMD
 DefaultDependencies=false
 After=local-fs.target
