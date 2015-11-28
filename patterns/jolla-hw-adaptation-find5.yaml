@@ -9,7 +9,7 @@ Requires:
 - pattern:jolla-ui-configuration-find5
 
 - droid-hal-find5
-- droid-hal-fund5-detritus
+- droid-hal-find5-detritus
 - droid-hal-find5-img-boot
 - droid-hal-find5-kernel-modules
 - droid-config-find5-sailfish
@@ -39,6 +39,7 @@ Requires:
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
+- gstreamer1.0-droid
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
