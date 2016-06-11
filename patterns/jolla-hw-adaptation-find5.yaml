@@ -75,7 +75,7 @@ Requires:
 - telepathy-ring
 
 # For devices where test_gps eventually gets a fix:
-- geoclue-provider-hybris-community
+- geoclue-provider-hybris
 
 # This is a temporary acceptable hack to have orientation sensors 
 # See README for full description: https://github.com/mer-hybris/unblank-restart-sensors
