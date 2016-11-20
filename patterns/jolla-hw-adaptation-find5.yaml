@@ -83,5 +83,8 @@ Requires:
 # for audio during calls
 - pulseaudio-modules-droid-glue
 
+# For Torch in Events View
+- jolla-settings-system-flashlight
+
 Summary: Jolla HW Adaptation find5
 
