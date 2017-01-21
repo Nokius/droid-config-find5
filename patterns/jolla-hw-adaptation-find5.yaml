@@ -12,6 +12,7 @@ Requires:
 - droid-hal-find5-detritus
 - droid-hal-find5-img-boot
 - droid-hal-find5-kernel-modules
+- droid-config-find5-flashing
 - droid-config-find5-sailfish
 - droid-config-find5-pulseaudio-settings
 - droid-config-find5-policy-settings
