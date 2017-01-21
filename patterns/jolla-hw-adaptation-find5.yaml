@@ -76,6 +76,9 @@ Requires:
 # For devices where test_gps eventually gets a fix:
 - geoclue-provider-hybris
 
+# For offline location provider
+- geoclue-provider-mlsdb
+
 # This is a temporary acceptable hack to have orientation sensors 
 # See README for full description: https://github.com/mer-hybris/unblank-restart-sensors
 - unblank-restart-sensors
