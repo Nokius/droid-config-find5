@@ -4,10 +4,6 @@
 Description: Pattern with packages for find5 HW Adaptation
 Name: jolla-hw-adaptation-find5
 Requires:
-- pattern:jolla-hw-adaptation-hybris
-- pattern:jolla-hw-adaptation-hybris-droid-vibrator
-- pattern:jolla-ui-configuration-find5
-
 - droid-hal-find5
 - droid-hal-find5-detritus
 - droid-hal-find5-img-boot
@@ -17,7 +13,23 @@ Requires:
 - droid-config-find5-pulseaudio-settings
 - droid-config-find5-policy-settings
 - droid-config-find5-preinit-plugin
+- droid-config-find5-bluez4
 - droid-hal-version-find5
+
+# Hybris packages
+- libhybris-libEGL
+- libhybris-libGLESv2
+- libhybris-libwayland-egl
+
+# Sensors
+- hybris-libsensorfw-qt5
+
+# Vibra
+ - ngfd-plugin-droid-vibrator
+ - qt5-feedback-haptics-droid-vibrator
+
+# Needed for /dev/touchscreen symlink
+- qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
 # for audio recording to work:
@@ -28,18 +40,13 @@ Requires:
 - qt5-qpa-hwcomposer-plugin
 - qtscenegraph-adaptation
 
-# GStreamer v0.10 multimedia support is being deprecated
-#- gstreamer0.10-droidcamsrc
-#- gstreamer0.10-omx
-#- gstreamer0.10-droideglsink
-#- nemo-qtmultimedia-plugins-gstvideotexturebackend
-
 # Add GStreamer v1.0 as standard
 - gstreamer1.0
 - gstreamer1.0-plugins-good
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
+# For devices with droidmedia and gst-droid built, see HADK pdf for more information
 - gstreamer1.0-droid
 
 # This is needed for notification LEDs
@@ -68,15 +75,8 @@ Requires:
 # Settings app needs this since update15
 - jolla-settings-layout
 
-# For devices with working cellular modem:
-- pattern:jolla-sailfish-cellular-apps
-- telepathy-ring
-
 # For devices where test_gps eventually gets a fix:
 - geoclue-provider-hybris
-
-# For offline location provider
-- geoclue-provider-mlsdb
 
 # This is a temporary acceptable hack to have orientation sensors 
 # See README for full description: https://github.com/mer-hybris/unblank-restart-sensors
