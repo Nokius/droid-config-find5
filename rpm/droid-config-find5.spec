@@ -4,6 +4,9 @@
 %define device find5
 %define vendor oppo
 
+%define rpm_device find5
+%define rpm_vendor oppo
+
 %define vendor_pretty OPPO
 %define device_pretty Find5
 
@@ -22,3 +25,4 @@ Provides: ofono-configs
 Provides: sensord-configs
 
 %include droid-configs-device/droid-configs.inc
+
